@@ -25,7 +25,7 @@ function megjelenitchf(y){
 }
 fetch("https://api.exchangerate-api.com/v4/latest/aud")
 .then(x=>x.json)
-.then(y=>megjelenitchf(y))
+.then(y=>megjelenitaud(y))
 function megjelenitaud(y){
     console.log(y)
     document.getElementById("aud").innerHTML=y.rates.HUF+"ft"
